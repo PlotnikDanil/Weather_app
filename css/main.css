@@ -1,0 +1,152 @@
+@import './reset.css';
+@import url(https://fonts.googleapis.com/css?family=Jomhuria:regular);
+@import url(https://fonts.googleapis.com/css?family=Sen:regular,500,600,700,800);
+
+
+.header {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+
+.header-line {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto; /* выставляем блок header-line по центру */
+    width: 1200px;
+    height: 900px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #03A9CE 0%, #FFF 91.15%);
+}
+
+.box {
+    display: flex;
+    flex-direction: column; /* расположение flex элементов по вертикальной оси */
+    align-items: center; /* выравнивание flex элементов по второстепенной оси (по горизонтальной) */
+}
+
+.tittle {
+    font-family: 'Jomhuria';
+    font-size: 85px;
+    margin-top: 28px; 
+    margin-bottom: 13px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;  
+
+    background-color: #FFF;
+    width: 412px; 
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 42px;
+}
+
+.input {
+    padding-left: 15px;
+    flex-grow:1; /* увеличение свободного места flex контейнера */
+
+    color: black;
+    font-family: 'Sen';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+input::placeholder {
+    color:  #868686; /* цвет текста из инпута до ввода */
+}
+
+.btn {
+    width: 90px;
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #D9D9D9;
+
+    text-align: center;
+    color: #424242;
+    font-family: 'Sen';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+
+    transition: color 0.3s linear; /* задержка перед изменением цвета у кнопки */
+    transition: background-color 0.3s linear; 
+}
+
+.btn:hover {
+    color: #FFF; /* зименение цвета кнопки при наведение на нее курсором */
+    background-color: #333333;
+}
+
+.card-city {
+    text-align: center;
+    margin-bottom: 30px;
+
+    color: #000;
+    font-family: 'Sen';
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-city span {
+   color: #FFB900;
+}
+
+.card-temperature {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 63px;
+
+    color: #000;
+    font-family: 'Sen';
+    font-size: 170px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.image-sun-cloud {
+    width: 260px;
+    height: 240px;
+}
+
+.weather {
+    text-align: center;
+    margin-top: -45px;
+
+    color: #000;
+    font-family: 'Sen';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer {
+    display: flex;
+    padding: 5px 0px;
+    background: #03A9CE;
+    justify-content: center;
+    margin: auto;
+
+
+    font-size: 17px;
+    font-family: 'Sen';
+    text-align: center;
+    color: #000;
+}
+
+.footer a {
+    color: #000;
+    text-decoration: none;
+}
