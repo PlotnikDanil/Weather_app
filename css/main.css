@@ -1,13 +1,26 @@
 @import './reset.css';
-@import url(https://fonts.googleapis.com/css?family=Jomhuria:regular);
-@import url(https://fonts.googleapis.com/css?family=Sen:regular,500,600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Jomhuria&display=swap');
 
 
 .header {
+    position: relative;
     background-color: rgb(255, 255, 255);
     height: 100vh;
+    color: #000;
+    
 }
 
+html, body, .header {
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; 
+}
 
 .header-line {
     position: absolute;
@@ -15,7 +28,7 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    margin: auto; /* выставляем блок header-line по центру */
+    margin: auto; 
     width: 1200px;
     height: 900px;
     border-radius: 10px;
@@ -24,8 +37,8 @@
 
 .box {
     display: flex;
-    flex-direction: column; /* расположение flex элементов по вертикальной оси */
-    align-items: center; /* выравнивание flex элементов по второстепенной оси (по горизонтальной) */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .tittle {
@@ -48,10 +61,10 @@
 
 .input {
     padding-left: 15px;
-    flex-grow:1; /* увеличение свободного места flex контейнера */
+    flex-grow:1; 
 
     color: black;
-    font-family: 'Sen';
+    font-family: 'Comfortaa';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -60,7 +73,7 @@
 }
 
 input::placeholder {
-    color:  #868686; /* цвет текста из инпута до ввода */
+    color:  #868686; 
 }
 
 .btn {
@@ -71,18 +84,18 @@ input::placeholder {
 
     text-align: center;
     color: #424242;
-    font-family: 'Sen';
+    font-family: 'Comfortaa';
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 1;
 
-    transition: color 0.3s linear; /* задержка перед изменением цвета у кнопки */
+    transition: color 0.3s linear; 
     transition: background-color 0.3s linear; 
 }
 
 .btn:hover {
-    color: #FFF; /* зименение цвета кнопки при наведение на нее курсором */
+    color: #FFF; 
     background-color: #333333;
 }
 
@@ -92,8 +105,7 @@ input::placeholder {
     text-align: center;
     margin-bottom: 30px;
 
-    color: #000;
-    font-family: 'Sen';
+    font-family: 'Comfortaa';
     font-size: 53px;
     font-style: normal;
     font-weight: 400;
@@ -109,8 +121,7 @@ input::placeholder {
     justify-content: space-around;
     margin: 0px 63px;
 
-    color: #000;
-    font-family: 'Sen';
+    font-family: 'Comfortaa';
     font-size: 170px;
     font-style: normal;
     font-weight: 400;
@@ -122,12 +133,17 @@ input::placeholder {
     height: 240px;
 }
 
+.image-sun-cloud-1 {
+    width: 260px;
+    height: 240px;
+    transform: scaleX(-1); 
+}
+
 .weather {
     text-align: center;
     margin-top: -45px;
 
-    color: #000;
-    font-family: 'Sen';
+    font-family: 'Comfortaa';
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -143,12 +159,10 @@ input::placeholder {
 
 
     font-size: 17px;
-    font-family: 'Sen';
+    font-family: 'Comfortaa';
     text-align: center;
-    color: #000;
 }
 
 .footer a {
-    color: #000;
     text-decoration: none;
 }

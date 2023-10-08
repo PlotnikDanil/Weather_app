@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather forecast</title>
-    <link rel="stylesheet" href="./css/main.css">  <!--подключаем css документ-->
+    <link rel="stylesheet" href="./css/main.css">  
 </head>
 <body>
     <header class="header">
-            <div class="header-line">
-                <div class="box">
-                    <h1 class="tittle">
-                        Weather App
-                    </h1>
+        <div class="header-line">
+            <div class="box">
+                <h1 class="tittle">
+                    Weather App
+                 </h1>
                         
-                    <form class="form" id="form"> <!--форма предназначена для обмена данными между пользователем и сервером-->
+                <form class="form" id="form"> 
 
-                        <input class="input" type="text" placeholder="enter the city">
+                    <input class="input" type="text" placeholder="enter the city">
 
-                        <button class="btn">show</button>
-                    </form>
-                </div>
+                    <button class="btn">show</button>
+                </form>
             </div>
+        </div>
     </header>  
 
     <footer class="footer">
@@ -29,7 +29,8 @@
     </footer>
 
 
-    <script src="./main.js"></script> <!--подключаем js документ-->
+    <script src="./main.js" type="module"></script> 
+    <script src="./conditions.js" type="module"></script> 
 
 </body>
 </html>
